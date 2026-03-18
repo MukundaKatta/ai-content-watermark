@@ -1,63 +1,43 @@
-# Ai Content Watermark
+# ai-content-watermark
 
-Invisible watermarking for AI-generated content
+**Invisible watermarking for AI-generated content — detect and verify provenance**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Api
-Audio Watermark
-Decoder
-Detector
-Encoder
-Image Watermark
-Text Watermark
-
-## Tech Stack
-
-- **Language:** Python
-- **Framework:** FastAPI
-- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/ai-content-watermark.git
-cd ai-content-watermark
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-### Running
+## Quick Start
+```python
+from src.core import AiContentWatermark
+ instance = AiContentWatermark()
+r = instance.detect(input="test")
+```
 
+## CLI
 ```bash
-uvicorn app.main:app --reload
+python -m src status
+python -m src run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `detect()` | Detect |
+| `scan()` | Scan |
+| `monitor()` | Monitor |
+| `alert()` | Alert |
+| `get_report()` | Get report |
+| `configure()` | Configure |
+| `get_stats()` | Get stats |
+| `reset()` | Reset |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-ai-content-watermark/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
+pytest tests/ -v
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
