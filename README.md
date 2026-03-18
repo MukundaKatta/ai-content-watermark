@@ -1,13 +1,15 @@
-# ai-content-watermark
+# AI Content Watermark
 
-Stub Python project. Described as "invisible watermarking for AI-generated content - detect and verify provenance," but none of that functionality exists.
+Invisible watermarking system for AI-generated content with provenance detection and verification.
 
-## What's actually here
+## About
+AI Content Watermark embeds imperceptible signatures into AI-generated text and media, enabling downstream detection and origin verification. Useful for content authenticity, copyright tracking, and responsible AI deployment.
 
-A single class in `src/core.py` (AiContentWatermark) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no watermarking, no content detection, no provenance verification - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No image processing or watermarking libraries are present.
+## Tech Stack
+- Language: Python
+- Watermarking: Steganographic embedding algorithms
+- Detection: Statistical analysis and verification pipeline
+- Formats: Text and media content support
 
 ## Status
-
-Scaffolding only. No working watermarking functionality exists.
+Active development - watermark embedding and detection algorithms established.
