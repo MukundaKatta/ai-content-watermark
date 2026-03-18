@@ -1,41 +1,13 @@
 # ai-content-watermark
 
-**Invisible watermarking for AI-generated content — detect and verify provenance**
+Stub Python project. Described as "invisible watermarking for AI-generated content - detect and verify provenance," but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (AiContentWatermark) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no watermarking, no content detection, no provenance verification - just stubs.
 
-## Quick Start
-```python
-from src.core import AiContentWatermark
- instance = AiContentWatermark()
-r = instance.detect(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No image processing or watermarking libraries are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `detect()` | Detect |
-| `scan()` | Scan |
-| `monitor()` | Monitor |
-| `alert()` | Alert |
-| `get_report()` | Get report |
-| `configure()` | Configure |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working watermarking functionality exists.
